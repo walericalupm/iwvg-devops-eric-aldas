@@ -1,6 +1,13 @@
 ## [Máster en Ingeniería Web por la Universidad Politécnica de Madrid (miw-upm)](http://miw.etsisi.upm.es)
 ## Ingeniería Web: Visión General (IWVG) DevOps
-> Este proyecto es una Plantilla de apoyo docente de la asignatura.
+> Práctica sobre herramientas DevOps
+> Autor: Eric Aldas
+> Año: Octubre/2020
+>
+
+##Estado del proyecto
+  &nbsp;&nbsp;Travis CI   
+  [![Build Status](https://travis-ci.com/walericalupm/iwvg-devops-eric-aldas.svg?branch=master)](https://travis-ci.com/walericalupm/iwvg-devops-eric-aldas) 
 
 ### :gear: Instalación del proyecto
 1. Clonar el repositorio en tu equipo, **mediante consola**:
