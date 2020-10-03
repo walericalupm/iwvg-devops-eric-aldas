@@ -13,3 +13,7 @@ install:
   - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
 script:
   - mvn verify sonar:sonar -Dsonar.host.url=https://sonarcloud.io -Dsonar.organization=walericalupm -Dsonar.login=$SONAR
+deploy:
+  provider: heroku
+  api_key:
+    secure: $HEROKU
