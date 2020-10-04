@@ -5,6 +5,7 @@ branches:
     - develop
     - "/^Release-[0-999].[0-999]$/"
     - master
+    - bug#14
 notifications:
   email:
     recipients:
