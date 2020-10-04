@@ -50,10 +50,18 @@ class FractionTest {
     void isProper() {
         assertEquals(true, this.fractionToTest.isProper());
     }
+    @Test
+    void isNotProper() {
+        assertEquals(false, this.fraction2ToTest.isProper());
+    }
 
     @Test
-    void isImproper() {
+    void isNotImproper() {
         assertEquals(false, this.fractionToTest.isImproper());
+    }
+    @Test
+    void isImproper() {
+        assertEquals(true, this.fraction2ToTest.isImproper());
     }
 
     @Test
