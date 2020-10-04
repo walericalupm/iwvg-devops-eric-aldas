@@ -3,9 +3,10 @@ language: java
 branches:
   only:
     - develop
-    - "/^release-[0-999].[0-999]$/"
+    - "/^Release-[0-999].[0-999]$/"
     - master
 notifications:
+  slack: 'upm-aup7245:zoVK0RcTvVTZweOb39hMqijD#miw-devops-eric-aldas'
   email:
     recipients:
       - e.aldas@alumnos.upm.es
@@ -15,5 +16,6 @@ script:
   - mvn verify sonar:sonar -Dsonar.host.url=https://sonarcloud.io -Dsonar.organization=walericalupm -Dsonar.login=$SONAR
 deploy:
   provider: heroku
-  api_key:
-    secure: $HEROKU
+  api_key: $HEROKU
+  on:
+    branch: master
