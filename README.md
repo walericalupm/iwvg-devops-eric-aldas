@@ -6,8 +6,10 @@
 >
 
 ##Estado del proyecto
-  &nbsp;&nbsp;Travis CI &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SonarCloud   
-  [![Build Status](https://travis-ci.com/walericalupm/iwvg-devops-eric-aldas.svg?branch=master)](https://travis-ci.com/walericalupm/iwvg-devops-eric-aldas) [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=es.upm.miw.aldas.eric%3Aiwvg-devops-eric-aldas&metric=coverage)](https://sonarcloud.io/dashboard?id=es.upm.miw.aldas.eric%3Aiwvg-devops-eric-aldas)
+  &nbsp;&nbsp;Travis CI &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SonarCloud &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Better Code Hub  
+  [![Build Status](https://travis-ci.com/walericalupm/iwvg-devops-eric-aldas.svg?branch=master)](https://travis-ci.com/walericalupm/iwvg-devops-eric-aldas) 
+  [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=es.upm.miw.aldas.eric%3Aiwvg-devops-eric-aldas&metric=coverage)](https://sonarcloud.io/dashboard?id=es.upm.miw.aldas.eric%3Aiwvg-devops-eric-aldas)
+  [![BCH compliance](https://bettercodehub.com/edge/badge/walericalupm/iwvg-devops-eric-aldas?branch=master)](https://bettercodehub.com/)
 
 ### :gear: Instalación del proyecto
 1. Clonar el repositorio en tu equipo, **mediante consola**:
