@@ -46,16 +46,16 @@ public class Fraction {
 
     public boolean isEquivalent(Fraction fraction1, Fraction fraction2)
     {
-        return (fraction1.getNumerator()*fraction2.getDenominator())
+        return ((fraction1.getNumerator()*fraction2.getDenominator())
                 ==
-                (fraction1.getDenominator()*fraction2.getNumerator());
+                (fraction1.getDenominator()*fraction2.getNumerator()));
     }
 
     public Fraction add(Fraction fraction1, Fraction fraction2)
     {
         int leastCommonMultiple = this.getLeastCommonMultiple(fraction1.getDenominator(), fraction2.getDenominator());
-        int summand1 = (fraction1.getDenominator()/leastCommonMultiple)*fraction1.getNumerator();
-        int summand2 = (fraction2.getDenominator()/leastCommonMultiple)*fraction2.getNumerator();
+        int summand1 = (leastCommonMultiple/fraction1.getDenominator())*fraction1.getNumerator();
+        int summand2 = (leastCommonMultiple/fraction2.getDenominator())*fraction2.getNumerator();
         return new Fraction((summand1+summand2), leastCommonMultiple);
     }
 
@@ -69,11 +69,11 @@ public class Fraction {
     public Fraction divide(Fraction fraction1, Fraction fraction2) {
         return new Fraction(
                 (fraction1.getNumerator() * fraction2.getDenominator()),
-                (fraction1.getDenominator()*fraction2.getNumerator())
+                (fraction1.getDenominator() * fraction2.getNumerator())
         );
     }
 
-    private int getLeastCommonMultiple(int denominatorFraction1, int denominatorFraction2)
+    public int getLeastCommonMultiple(int denominatorFraction1, int denominatorFraction2)
     {
         int lcm=1;
         int i=2;
