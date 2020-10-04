@@ -15,7 +15,7 @@ class SearchTest {
     }
 
     @Test
-    void testFindUserFractionNumeratorByFamilyName() {
+    void testFindDecimalImproperFractionByUserName() {
         assertEquals(List.of(new Fraction(2, 1).decimal(),
                 new Fraction(4, 3).decimal()),
                 new Search().findDecimalImproperFractionByUserName("Ana")
