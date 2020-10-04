@@ -39,6 +39,11 @@ public class UsersDatabase {
                 new Fraction(1, 0),
                 new Fraction(1, 1)
         );
+        List<Fraction> fractions7 = List.of(
+                new Fraction(2, 3),
+                new Fraction(1, 3),
+                new Fraction(1, 6)
+        );
 
         return Stream.of(
                 new User("1", "Oscar", "Fernandez", fractions1),
@@ -46,7 +51,8 @@ public class UsersDatabase {
                 new User("3", "Oscar", "López", fractions3),
                 new User("4", "Paula", "Torres", fractions4),
                 new User("5", "Antonio", "Blanco", fractions5),
-                new User("6", "Paula", "Torres", fractions6)
+                new User("6", "Paula", "Torres", fractions6),
+                new User("13", "Tio", "Pepe", fractions7)
         );
     }
 }
