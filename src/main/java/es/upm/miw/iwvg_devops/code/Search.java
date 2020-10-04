@@ -3,6 +3,7 @@ package es.upm.miw.iwvg_devops.code;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 
 public class Search {
@@ -36,4 +37,13 @@ public class Search {
 
         return new Fraction(maxNumerator, finalMaxDenominator);
     }
+
+    Stream<Double> findDecimalImproperFractionByUserName(String name){
+        return new UsersDatabase().findAll()
+                .filter(user -> name.equals(user.getName()))
+                .flatMap(user -> user.getFractions().stream())
+                .filter(fraction -> fraction.isImproper())
+                .map(fraction -> fraction.decimal());
+    }
+
 }
