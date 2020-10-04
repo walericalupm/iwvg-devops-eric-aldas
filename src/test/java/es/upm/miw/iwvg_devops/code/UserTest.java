@@ -41,13 +41,13 @@ class UserTest{
 
     @Test
     void getFamilyName() {
-        assertEquals("Eric", this.userToTest.getName());
+        assertEquals("Aldas", this.userToTest.getFamilyName());
     }
 
     @Test
     void setFamilyName() {
-        this.userToTest.setName("Arguello");
-        assertEquals("Arguello", this.userToTest.getName());
+        this.userToTest.setFamilyName("Arguello");
+        assertEquals("Arguello", this.userToTest.getFamilyName());
     }
 
     @Test
@@ -79,6 +79,11 @@ class UserTest{
     @Test
     void initials() {
         assertEquals("E.A", this.userToTest.initials());
+    }
+
+    @Test
+    void familyNameInitials() {
+        assertEquals("A", this.userToTest.familyNameInitials());
     }
 
 
