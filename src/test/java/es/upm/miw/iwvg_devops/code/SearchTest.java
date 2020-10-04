@@ -21,4 +21,10 @@ class SearchTest {
                 new Search().findDecimalImproperFractionByUserName("Ana")
                         .collect(Collectors.toList()));
     }
+
+    @Test
+    void findUserFamilyNameInitialBySomeProperFraction() {
+        assertEquals(List.of("F", "B","L","B"), new Search().findUserFamilyNameInitialBySomeProperFraction()
+                .collect(Collectors.toList()));
+    }
 }

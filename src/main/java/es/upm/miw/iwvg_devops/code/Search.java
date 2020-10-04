@@ -46,4 +46,11 @@ public class Search {
                 .map(fraction -> fraction.decimal());
     }
 
+    public Stream<String> findUserFamilyNameInitialBySomeProperFraction() {
+        return new UsersDatabase().findAll()
+                .filter(user -> user.getFractions().stream()
+                        .anyMatch(fraction -> fraction.isProper()))
+                .map(User::familyNameInitials);
+    }
+
 }
