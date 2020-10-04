@@ -18,4 +18,4 @@ deploy:
   provider: heroku
   api_key:
     secure: $HEROKU
-    on: Release-1.0.0
+    on branch: bug#14
