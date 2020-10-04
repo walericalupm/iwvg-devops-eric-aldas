@@ -1,1 +1,1 @@
- web: java -Dserver.port=$PORT $JAVA_OPTS -jar target/iwvg-devops-eric-aldas-1.0.0-SNAPSHOT.jar
+ web: java -Dserver.port=$PORT $JAVA_OPTS -jar target/iwvg-devops-eric-aldas-1.0.2-release.jar
